@@ -10,4 +10,9 @@ stages:
 sast:
   stage: test
 include:
-- template: Auto-DevOps.gitlab-ci.yml
+#- template: Jobs/Code-Quality.gitlab-ci.yml
+#- template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml
+#- template: Jobs/License-Scanning.latest.gitlab-ci.yml
+- template: Jobs/SAST.latest.gitlab-ci.yml
+- template: Jobs/Secret-Detection.latest.gitlab-ci.yml
+- template: Security/Secure-Binaries.gitlab-ci.yml
