@@ -1,3 +1,3 @@
 module codeberg.org/yelosan/asian-pop-database
 
-go 1.20
+go 1.22
